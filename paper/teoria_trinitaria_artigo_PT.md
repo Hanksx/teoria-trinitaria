@@ -179,6 +179,12 @@ Note que a otimização saturou os limites superiores para $A_f$, $\lambda$, $\t
 
 O gap negativo indica que o modelo não sofreu overfitting e generaliza robustamente para novos dados.
 
+![Figura 1: Comparação Treino vs Teste](../figures/fig1_train_test_comparison.png)
+*Figura 1: Desempenho no conjunto de treinamento vs teste mostrando gap de generalização mínimo. O gap negativo (-2.6%) indica excelente robustez do modelo.*
+
+![Figura 2: Distribuição de RMS](../figures/fig2_rms_histogram.png)
+*Figura 2: Distribuição de erros RMS em todas as galáxias. 64% alcançam RMS < 50 km/s, 77% < 100 km/s.*
+
 ### 4.3 Comparação com Modelos Estabelecidos
 
 | Modelo | RMS (km/s) | Parâmetros | Referência |
@@ -190,6 +196,9 @@ O gap negativo indica que o modelo não sofreu overfitting e generaliza robustam
 
 Nosso RMS de 62 km/s é competitivo com MOND e dentro do intervalo ΛCDM, enquanto usa apenas parâmetros globais (sem ajuste por galáxia).
 
+![Figura 3: Comparação de Modelos](../figures/fig3_model_comparison.png)
+*Figura 3: Comparação da Teoria Trinitária com MOND e ΛCDM em diferentes tipos de galáxias.*
+
 ### 4.4 Dados Sintéticos vs Reais
 
 A validação inicial usou 50 galáxias sintéticas geradas via curvas de rotação simuladas:
@@ -199,6 +208,19 @@ A validação inicial usou 50 galáxias sintéticas geradas via curvas de rotaç
 - **Diferença:** +54% (esperado para ruído observacional real)
 
 Isso confirma que o modelo transita com sucesso de dados idealizados para observacionais.
+
+### 4.5 Exemplos de Curvas de Rotação
+
+As Figuras 4-5 mostram ajustes representativos para duas galáxias SPARC demonstrando a capacidade do modelo de capturar tanto a estrutura interna quanto a planicidade externa:
+
+![Figura 4: NGC 3198](../figures/fig4_rotation_curve_ngc3198.png)
+*Figura 4: Ajuste da curva de rotação para NGC 3198, uma galáxia de disco clássica. O modelo captura tanto a região interna ascendente quanto o platô externo plano.*
+
+![Figura 5: NGC 2403](../figures/fig5_rotation_curve_ngc2403.png)
+*Figura 5: Ajuste da curva de rotação para NGC 2403, mostrando excelente concordância em todos os raios. Componentes individuais de velocidade (fractal, quântico, confinamento) são mostrados.*
+
+![Figura 6: Comparação de Teorias](../figures/fig6_theory_comparison.png)
+*Figura 6: Comparação sistemática da Teoria Trinitária com modelos estabelecidos de matéria escura em toda a amostra SPARC.*
 
 ---
 

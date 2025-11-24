@@ -179,6 +179,12 @@ Note that optimization saturated upper bounds for $A_f$, $\lambda$, $\tau$, and 
 
 The negative gap indicates the model did not overfit and generalizes robustly to new data.
 
+![Figure 1: Train vs Test Performance](../figures/fig1_train_test_comparison.png)
+*Figure 1: Training vs test set performance showing minimal generalization gap. The negative gap (-2.6%) indicates excellent model robustness.*
+
+![Figure 2: RMS Distribution](../figures/fig2_rms_histogram.png)
+*Figure 2: Distribution of RMS errors across all galaxies. 64% achieve RMS < 50 km/s, 77% < 100 km/s.*
+
 ### 4.3 Comparison with Established Models
 
 | Model | RMS (km/s) | Parameters | Reference |
@@ -190,6 +196,9 @@ The negative gap indicates the model did not overfit and generalizes robustly to
 
 Our RMS of 62 km/s is competitive with MOND and within the ΛCDM range, while using only global parameters (no per-galaxy tuning).
 
+![Figure 3: Model Comparison](../figures/fig3_model_comparison.png)
+*Figure 3: Comparison of Trinitaria Theory with MOND and ΛCDM across different galaxy types.*
+
 ### 4.4 Synthetic vs Real Data
 
 Initial validation used 50 synthetic galaxies generated via mock rotation curves:
@@ -199,6 +208,19 @@ Initial validation used 50 synthetic galaxies generated via mock rotation curves
 - **Difference:** +54% (expected for real observational noise)
 
 This confirms the model transitions successfully from idealized to observational data.
+
+### 4.5 Example Rotation Curves
+
+Figures 4-5 show representative fits for two SPARC galaxies demonstrating the model's ability to capture both inner structure and outer flatness:
+
+![Figure 4: NGC 3198](../figures/fig4_rotation_curve_ngc3198.png)
+*Figure 4: Rotation curve fit for NGC 3198, a classic disk galaxy. The model captures both the rising inner region and flat outer plateau.*
+
+![Figure 5: NGC 2403](../figures/fig5_rotation_curve_ngc2403.png)
+*Figure 5: Rotation curve fit for NGC 2403, showing excellent agreement across all radii. Individual velocity components (fractal, quantum, confinement) are shown.*
+
+![Figure 6: Theory Comparison](../figures/fig6_theory_comparison.png)
+*Figure 6: Systematic comparison of Trinitaria Theory with established dark matter models across the full SPARC sample.*
 
 ---
 
