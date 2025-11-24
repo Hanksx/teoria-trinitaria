@@ -1,0 +1,16 @@
+
+======================================================================
+LENDO DADOS REAIS DO SPARC
+======================================================================
+Traceback (most recent call last):
+  File "/Users/nilsilva/Desktop/teoria_trinitaria_publicacao/code/validacao_bounds_expandidos.py", line 391, in <module>
+    validacao_cruzada_sparc()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/nilsilva/Desktop/teoria_trinitaria_publicacao/code/validacao_bounds_expandidos.py", line 223, in validacao_cruzada_sparc
+    dataset = preparar_dataset_sparc()
+  File "/Users/nilsilva/Desktop/teoria_trinitaria_publicacao/code/validacao_bounds_expandidos.py", line 128, in preparar_dataset_sparc
+    galaxias = ler_sparc_table1()
+  File "/Users/nilsilva/Desktop/teoria_trinitaria_publicacao/code/validacao_bounds_expandidos.py", line 29, in ler_sparc_table1
+    with open(filepath, 'r') as f:
+         ~~~~^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'sparc_data_real/table1.dat'
