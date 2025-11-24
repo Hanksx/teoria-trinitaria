@@ -1,0 +1,28 @@
+{
+  "timestamp": "20251124_140513",
+  "n_galaxies": 129,
+  "n_train": 90,
+  "n_test": 39,
+  "parameters": {
+    "amplitude_fractal": 50.0,
+    "amplitude_quantum": 1.0,
+    "length_scale_factor": 10.0,
+    "decay_rate": 5.0,
+    "baryonic_boost": 3.0,
+    "N": 4,
+    "L": 5,
+    "Q": 4.0
+  },
+  "results": {
+    "train_rms": 63.70014645825516,
+    "test_rms": 62.027246435482155,
+    "gap_percent": -2.626210638101616,
+    "success_50km": 25,
+    "success_100km": 30
+  },
+  "comparison": {
+    "synthetic_rms": 40.4,
+    "real_rms": 62.027246435482155,
+    "difference": 21.627246435482157
+  }
+}
